@@ -1,0 +1,110 @@
+<!--
+{{getColor()}}
+<p>Example of JSON pipe </p>
+{{testObj | json}}
+<hr>
+<p>Angular offers two types of directives</p>
+<p>Attribute Directives: Change appearance. The most common are</p>
+<ul>
+  <li>NgClass</li>
+  <li>NgStyle</li>
+  <li>NgModel</li>
+</ul>
+<p>Structural Directives: Responsible for HTML Layout.Add/remove/manipulate host element to which they are attached</p>
+<ul>
+  <li>NgIf</li>
+  <li>NgFor</li>
+  <li>NgSwitch</li>
+</ul>
+
+<p>Note: We can create custom Directives too</p>
+<p>Components are also a type of directive</p> -->
+
+<!-- <hr>
+<h1>ngStyle</h1>
+<div [ngStyle]="{'background-color': 'red'}">Testing ngStyle 1</div>
+<div [ngStyle]="{'background-color': getColor()}">Testing ngStyle 2</div>
+<div [style.backgroundColor]="getColor()">Testing ngStyle 3</div>
+<div [ngStyle]="getColorObj()">Testing ngStyle 4</div> -->
+
+<!-- <hr>
+<h1>ngClass</h1>
+<p>ngClass Examples</p>
+<div [ngClass]="{'makered': this.testObj.id <= 1}">ngClass 1</div>
+<div [ngClass]="{
+  'makered': this.testObj.price < 100,
+  'makegrey': this.testObj.price >= 100
+}">ngClass 2</div>
+<div [class.makered]="this.testObj.price >= 100">ngClass 3</div> -->
+
+<!-- <hr>
+<h1>ngIf</h1>
+<div *ngIf="(this.testObj.price >= 200)">ngIf Example 1</div>
+<div *ngIf="(this.testObj.price < 100); else else_content">ngIf Example 2</div>
+<div *ngIf="(this.testObj.price >= 100) then if_content">ngIf Example 3</div>
+<div *ngIf="(this.testObj.price <  100) then if_content else else_content">ngIf Example 4</div>
+
+<ng-template #if_content>
+  <div>This is if content</div>
+</ng-template>
+<ng-template #else_content>
+  <div>This is else content</div>
+</ng-template> -->
+
+
+<!-- <hr>
+<h1>ngSwitch</h1> -->
+<!-- <select #country (change)="changeCountry(country.value)"> -->
+    <!-- <select (change)="changeCountry($event)"> -->
+<!-- <select [(ngModel)]="selectedCountry" >
+  <option value="0">--Select--</option>
+  <option value="1">Pakistan</option>
+  <option value="2">India</option>
+  <option value="3">China</option>
+</select>
+
+<div [ngSwitch]="selectedCountry">
+  <div *ngSwitchCase="1">output1</div>
+  <div *ngSwitchCase="2">output2</div>
+  <div *ngSwitchCase="3">output3</div>
+  <div *ngSwitchDefault>wrong selection</div>
+</div>
+<hr> -->
+
+<!-- <hr>
+<h1>ngFor</h1>
+<div *ngFor="let p of persons" class="box">
+  id: {{p.id}}<br>
+  name: {{p.name}}
+</div>
+<hr>
+<div *ngFor="let p of persons; let i=index" class="box">
+    index:{{i}} <br>
+    id: {{p.id}}<br>
+    name: {{p.name}}
+  </div> -->
+
+  <!-- =>
+
+<p *myUnless="myExpression">...</p>
+
+=> Equivalent to:
+
+<ng-template [myUnless]="myExpression">
+  <p>...</p>
+</ng-template>
+
+-->
+
+<!-- <p *appMyNgIf="showdiv">Hello World</p>
+
+<ng-template [appMyNgIf]="!showdiv">
+  <p>Hello World 2</p>
+</ng-template> -->
+
+<!-- <p appMyhighlighter  >Testing MyHighlighter</p> -->
+<!-- <p appMyhighlighter color="yellow" >Testing MyHighlighter</p>
+<p appMyhighlighter [color]="color" >Testing MyHighlighter</p> -->
+
+{{color | myTestPipe}}
+

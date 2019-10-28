@@ -1,0 +1,11 @@
+
+<p>
+  Moive: <input type="text" [(ngModel)]="term" />
+  <button (click)="searchMovies();" >Search</button>
+</p>
+<div *ngFor="let m of movies" class="movies">
+  Title: <span>{{m.Title}}</span> <br>
+  Year: <span>{{m.Year}}</span> <br>
+  Type: <span>{{m.Type}}</span> <br>
+  <img src="{{m.Poster}}" width="200px" height="200px" />
+</div>

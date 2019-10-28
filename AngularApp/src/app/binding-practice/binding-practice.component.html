@@ -1,0 +1,96 @@
+<!-- <h1>String interpolation - One way</h1>
+
+itemImageUrl: {{itemImageUrl}} <br>
+
+itemImageUrl: {{itemImageUrl | uppercase}} <br>
+
+testclass: {{testClasses}} <br>
+testclass: {{applyTestClass}} <br>
+testclass: {{applyRedStyle}} <br>
+
+<!-- getColor(): {{getColor()}} <br> -->
+
+<!-- testObj without Pipe: {{testObj}}<br>
+
+testObj with Json Pipe {{testObj | json}} <br> -->
+<!-- Safe Navigation Operator: {{testObj?.Name}} -->
+
+
+<!-- <hr>
+<h1>Property Binding Example with []</h1>
+<a href="https://angular.io/guide/template-syntax#property-binding">For Docs</a>
+
+<h3>Square brackets or bind- syntax to bind with a property</h3>
+<img [src]="itemImageUrl" width="400px" height="100px"> <br>
+<img bind-src="itemImageUrl" width="400px" height="100px"> <br>
+
+<h3>Omitting square brackets make right side as "string"=> no evaulation</h3>
+<img src="itemImageUrl" width="400px" height="100px"> <br>
+<img src="{{itemImageUrl}}" width="400px" height="100px">
+
+<ul>
+  <li>Use to set Properties of target element</li>
+  <li>Use to set direactive @Input() decorator</li>
+  <li>Return the proper type from "expression"</li>
+  <li>
+      You should omit the brackets when all of the following are true:
+    <ul>
+        <li>The target property accepts a string value.</li>
+        <li>The string is a fixed value that you can put directly into the template.</li>
+        <li>This initial value never changes.</li>
+    </ul>
+  </li>
+</ul> -->
+
+
+<!-- <hr>
+<h1>Attribute Binding</h1>
+<p>Property Binding is preferable but sometimes you need to use attribute binding</p>
+<p>Sometimes we don't have property but attributes e.g. colSpan of td</p>
+<p>Use same square brackets syntax but prefix with "attr"</p>
+<img [attr.src]="itemImageUrl" width="400px" height="100px"> <br> -->
+
+<!-- <hr>
+<h1>Class Binding</h1>
+<p class="testclass">Normal class</p>
+<p [attr.class]="testClasses">Using attr.class</p>
+<p [class.test]="applyTestClass">Conditionaly add class</p>
+<p bind-class.test="applyTestClass">Conditionaly add class using bind- syntax</p>
+
+
+<hr>
+<h1>Style Binding</h1>
+<p [style.color]="'red'">conditional style.color </p>
+<p [style.background-color]="applyRedStyle ? 'red' : ''">conditional style.color with - sytnax </p>
+<p [style.backgroundColor]="applyRedStyle ? 'red' : ''">conditional style.color with cameCase </p>
+<p [style.backgroundColor]="getColor()">Get color by a function</p> -->
+
+<!-- <h1>Event Binding</h1>
+<button (click)="onSaveClick()">Save without passing Event detail</button> <br>
+<button (click)="onSaveClick($event)">Save with passing Event detail</button><br>
+Buttons Clicked: {{clickCounter}} -->
+
+<!-- <hr>
+<h1>Two way data binding</h1>
+<ul>
+  <ol>Sets a specific element property. e.g. input=>value</ol>
+  <ol>Listens for an element change event. e.g input=>input change</ol>
+  <ol>[()] pattern if element has x property and xChange event</ol>
+</ul>
+
+
+<h3>Two way data binding without ngModel</h3>
+<input [value]="login1" (input)="setText($event)" /> {{login1}}<br>
+<input [value]="login2" (input)="login2=$event.target.value" /> {{login2}}<br>
+
+<h2>Two way data binding with ngModel</h2>
+<input [(ngModel)]="login3" /> {{login3}}<br> -->
+
+<!-- <hr>
+<h1>Template Reference Variable</h1>
+Login: <input #login />
+<button (click)="show(login.value)">Click Me</button>
+<br>
+Login: <input ref-mylogin />
+<button (click)="show(mylogin.value)">Click Me</button> -->
+

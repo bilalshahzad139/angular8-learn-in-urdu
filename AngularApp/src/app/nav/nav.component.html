@@ -1,0 +1,9 @@
+<p class='menu'>
+  <a routerLink='/home' routerLinkActive='active123'>Home</a>
+  <a routerLink='/persons' routerLinkActive='active123'>Persons</a>
+  <a routerLink='/movies' routerLinkActive='active123'>Movies</a>
+  <a *ngIf="isAuthenticated else else_content" routerLink='/logout' routerLinkActive='active123'>Logout</a>
+  <ng-template #else_content>
+    <a routerLink='/login' routerLinkActive='active123'>Login</a>
+  </ng-template>
+</p>
