@@ -1,27 +1,23 @@
-# AngularApp3
+#AngularApp Folder
+This contains Angular Code.
+1) Open command prompt
+2) Go to AngularApp folder
+3) Run following command to install all the node modules required to run this applicaiton
+npm install
+5) Run following command to build application
+ng build
+6) Run following command to run local dev server
+ng serve
+7) Go to browser and open url http://localhost:4200
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.0.
+#ASPNETCoreAPI
 
-## Development server
+This folder contains ASP.NET Core API 3.0 Project. You need VS 2019 + .NET Core 3.0 to run this. It is used in Training to get JWT & then to get Persons data.
+1) Open Solution
+2) Rebuild Solution
+3) Run the application & check following url in browser to test if it is running fine. It should show welcome message
+http://localhost:44356/api/main/test
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Video Training Is available at
+https://www.youtube.com/watch?v=wGPZJDw3Ee4&feature=youtu.be
