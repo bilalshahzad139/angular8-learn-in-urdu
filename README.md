@@ -1,4 +1,4 @@
-#AngularApp Folder
+# AngularApp Folder
 This contains Angular Code.
 1) Open command prompt
 2) Go to AngularApp folder
@@ -10,7 +10,7 @@ ng build
 ng serve
 7) Go to browser and open url http://localhost:4200
 
-#ASPNETCoreAPI
+# ASPNETCoreAPI
 
 This folder contains ASP.NET Core API 3.0 Project. You need VS 2019 + .NET Core 3.0 to run this. It is used in Training to get JWT & then to get Persons data.
 1) Open Solution
@@ -19,5 +19,5 @@ This folder contains ASP.NET Core API 3.0 Project. You need VS 2019 + .NET Core 
 http://localhost:44356/api/main/test
 
 
-Video Training Is available at
+# Video Training Is available at
 https://www.youtube.com/watch?v=wGPZJDw3Ee4&feature=youtu.be
