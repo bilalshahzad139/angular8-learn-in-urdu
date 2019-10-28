@@ -3,11 +3,11 @@ This contains Angular Code.
 1) Open command prompt
 2) Go to AngularApp folder
 3) Run following command to install all the node modules required to run this applicaiton
-npm install
+- npm install
 5) Run following command to build application
-ng build
+- ng build
 6) Run following command to run local dev server
-ng serve
+- ng serve
 7) Go to browser and open url http://localhost:4200
 
 # ASPNETCoreAPI
